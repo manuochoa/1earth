@@ -3,14 +3,14 @@ import { NFTabi, marketAbi, tokenAbi } from "../abis";
 import axios from "axios";
 
 // MAINNET Provider
-// let provider = new ethers.providers.JsonRpcProvider(
-//   "https://api.avax.network/ext/bc/C/rpc"
-// );
+let provider = new ethers.providers.JsonRpcProvider(
+  "https://api.avax.network/ext/bc/C/rpc"
+);
 
 // WAGMI Provider
-let provider = new ethers.providers.JsonRpcProvider(
-  "https://api.trywagmi.xyz/rpc"
-);
+// let provider = new ethers.providers.JsonRpcProvider(
+//   "https://api.trywagmi.xyz/rpc"
+// );
 
 // TESTNET Provider
 // let provider = new ethers.providers.JsonRpcProvider(
@@ -18,17 +18,18 @@ let provider = new ethers.providers.JsonRpcProvider(
 // );
 
 // MAINNET AVAX
-// let marketAddress = "0x947B763c512164D7E866fc1fF79A35865E0F2E44";
-// let tokenAddress = "0x64C95d1a03c7FcC197D4b851Bab89F7492681915";
-// let NFTAddress = "0x2dFC24B8Ca9C9d95984edD8ba5B467d7682C57f0";
-// let dividenTrackerAddress = "0x66F56D8A954Bc668145F92a40a54807b2cd9cAde";
+let marketAddress = "0x947B763c512164D7E866fc1fF79A35865E0F2E44";
+let tokenAddress = "0x64C95d1a03c7FcC197D4b851Bab89F7492681915";
+let NFTAddress = "0x2dFC24B8Ca9C9d95984edD8ba5B467d7682C57f0";
+let dividenTrackerAddress = "0x66F56D8A954Bc668145F92a40a54807b2cd9cAde";
+let vestingAddress = "0xc0572bc451eC8583817B40189d9c8bA61275393D";
 
 // TESTNET WAGMI
-let marketAddress = "0x81e14EacEC2a9f7865d1933FbCC4a382Caf1DBC3";
-let tokenAddress = "0x00055bdAdA10734bff62647dcE3A32CB03762a05";
-let NFTAddress = "0xEe73Db920d392A89F5b016E86D3507Bbd7946936";
-let dividenTrackerAddress = "0x2D1E692e38fE27C5408dD1a00ecBfb1Ef626C646";
-let vestingAddress = "0x7d6a134C93416b91403Ce77C55A29314F58943cF";
+// let marketAddress = "0x81e14EacEC2a9f7865d1933FbCC4a382Caf1DBC3";
+// let tokenAddress = "0x00055bdAdA10734bff62647dcE3A32CB03762a05";
+// let NFTAddress = "0xEe73Db920d392A89F5b016E86D3507Bbd7946936";
+// let dividenTrackerAddress = "0x2D1E692e38fE27C5408dD1a00ecBfb1Ef626C646";
+// let vestingAddress = "0x7d6a134C93416b91403Ce77C55A29314F58943cF";
 
 // TESTNET AVAX
 // let marketAddress = "0x367cD097Ce16Bfde52F17A144C58421E46dEc59E";
